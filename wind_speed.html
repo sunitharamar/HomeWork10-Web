@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+      <meta charset="UTF-8">
+      <title>Latitude/Wind Speed</title>
+      <link rel="stylesheet" href="reset.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+      <link rel="stylesheet" href="index.css">
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </head>  
+
+
+<!-- The following headder will be used acrosse all pages -->
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" id="nav-title" href="index.html">Latitude</a>
+            </div>    
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="temperature.html">Temperature</a></li>
+                            <li><a href="cloudiness.html">Cloudiness</a></li>
+                            <li><a href="wind_speed.html">Windyness</a></li>
+                            <li><a href="humidity.html">Humidity</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="comparison.html">Comparison</a></li>
+                    <li><a href="Data/data.html">Data</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <body>
+        
+                <div class="row">
+                        <div class="col-md-6" >
+                            <div class="first-panel">
+                            <div class="panel panel-info">
+                            <div class="panel-heading">Wind-Speed</div>
+                            <div class="panel-body">
+                                    <hr>
+                                    <img class ="home-image" src="assets/images/windmap.png" >
+                                    <p>Cold heavy air flows south from the north pole and is bent west, forming the polar easterlies. 
+                                        Warm air rises at the equator drawing air from the north which bends to the west, 
+                                        contributing to the trade winds. The Coriolis effect bends the westerlies and trade winds 
+                                        slightly clockwise in the northern hemisphere.<br><br>
+                                        Majority of the citiies have Wind Speed of from 0 to 5 mph with the latitude ranging from -50 to +80.
+                                    </p>
+                            </div>        
+                            </div>
+                        </div>
+                        </div>
+                        <div class="col-md-5" >
+                            <div class="second-panel">
+                            <div class="panel panel-info">
+                            <div class="panel-heading">Visualizations</div>
+                            <div class="panel-body">
+                                <div class="row">
+                                    <a href="temperature.html"><img class ="home-image-2" src="assets/images/temperaturemap.png" >
+                                    <a href="humidity.html"><img class ="home-image-2" src="assets/images/humiditymap.png" >
+                                </div>
+                                <div class="row">
+                                    <a href="cloudiness.html"><img class ="home-image-2" src="assets/images/cloudymap.png" >
+                                    <a href="wind_Speed.html"><img class ="home-image-2" src="assets/images/windmap.png" >
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>  
+    </body>
+</html>

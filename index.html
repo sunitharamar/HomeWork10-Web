@@ -1,0 +1,96 @@
+<<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Latitude</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </head>  
+
+
+<!-- The following headder will be used across all pages -->
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" id="nav-title" href="landing.html">Latitude</a>
+            </div>    
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="temperature.html">Max Temperature</a></li>
+                            <li><a href="cloudiness.html">Cloudiness</a></li>
+                            <li><a href="wind_speed.html">Wind Speed</a></li>
+                            <li><a href="humidity.html">Humidity</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="comparison.html">Comparison</a></li>
+                    <li><a href="Data/data.html">Data</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <section>
+                      <h1>
+                        Summary: Latitude vs. X
+                      </h1>
+                      <div class="main-content">
+                          <img src="assets/images/temperaturemap.png" alt="Temperature by Latitude" id="landing-img" class="img-responsive">
+                          <p>
+                                The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, 
+                                we first pulled data from the OpenWeather API to assemble a dataset on over 500 cities.<br> <br>
+                                After assembling the dataset, we used MAtplotlib to plot various aspects of the weather vs. latitude. 
+                                Factors we looked at included: Temperature, Cloudiness, Wind Speed, and Humidity. 
+                                This site provides the source data and visualizations created as part of the analysis, 
+                                as well as explanations and descriptions of any trends and correlations witnessed.<br><br>
+                                Please see more details on my Github account below: <br>
+                                <a target="_blank" href="https://github.com/sunitharamar/HomeWork6-Python-APIs">Weather_Project</a> @ my GitHub account.<br>
+                          </p>    
+                      </div>
+                  </section>
+                </div>
+                <div class="col-md-4">
+                    <section class="clearfix">
+                      <h1>
+                          Visualizations
+                      </h1>
+                      <a href="temperature.html">
+                          <img src="assets/images/temperaturemap.png" alt="Temperature by Latitude" class="img-responsive side-bar-img">
+                      </a>
+                      <a href="cloudiness.html">
+                          <img src="assets/images/cloudymap.png" alt="Cloudiness by Latitude" class="img-responsive side-bar-img">
+                      </a>
+                      <a href="wind_speed.html">
+                          <img src="assets/images/windmap.png" alt="Windyness by Latitude" class="img-responsive side-bar-img">
+                      </a>
+                      <a href="humidity.html">
+                          <img src="assets/images//humiditymap.png" alt="Humidity by Latitude" class="img-responsive side-bar-img">
+                      </a>
+                    </section>
+                </div>
+            </div>
+        </div> 
+    </body>
+
+</html>
+© GitHub, Inc. 2018
+Terms
+Privacy
+Security

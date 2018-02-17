@@ -1,0 +1,48 @@
+/*------------- Header --------------*/
+#nav-title {
+    background-color: #0dd8ee;
+    color: white;
+    margin-left: 50px;
+}
+.main-viz {
+    padding-bottom: 20px;
+    margin: auto;
+}
+.main-content {
+    padding: 30px;
+    padding-top: 0px;
+}
+.navbar-toggle {
+    background-color: #0dd8ee; 
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+}
+/*drop down*/
+
+
+/*--------------- Size Control ----------------*/
+@media only screen and (max-width: 992px) {
+    .side-bar-img {
+        width: 23%;
+    }
+    .comparison {
+        border-bottom: 1px solid #0dd8ee;
+        padding-bottom: 20px;
+    }
+    #bottom-comp {
+        border-bottom-width: 0px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #landing-img {
+        max-width: 100%;
+    }
+    .side-bar-img {
+        float: left;
+        max-height: 45%;
+        max-width: 45%;
+        margin: 2px;
+    }
+}
