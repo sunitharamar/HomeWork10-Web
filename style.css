@@ -1,0 +1,193 @@
+
+/*
+ First External CSS Stylesheet
+ */
+
+/* Styling for HTML elements */
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 18px;
+  line-height: 150%;
+  color: #333;
+  background: #efeee7;
+}
+
+header {
+  background: #333;
+}
+
+p {
+  padding: 1%;
+  margin: 2%;
+  font-family: sans-serif;    /*Georgia, "Times New Roman", Times, serif; */
+  font-size: 16px;
+  line-height: 150%;
+  color: #333;
+  text-align: left;
+}
+
+h1 {
+  padding: 20px 0;
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+  border-bottom:1px solid #FCFCFC; 
+  width:80%;
+}
+
+h3 {
+  font-size: 18px;
+  color: #333;
+  text-align: center;
+}
+
+h4 {
+  background: linear-gradient(to right, orange 20%, #FFF 20%) bottom .5em left .8em no-repeat, linear-gradient(#323A45, #323A45);
+  background-size: 100% 1px, 100% 100%;
+  padding: .5em;
+  color: #FDFFFE;
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+
+
+a {
+  color: #00020A; 
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 16px;
+  text-align: center;
+}
+
+button {
+  background-color: powderblue;
+}
+
+/* Selecting elements by class */
+.container {
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+}
+
+.navbar {
+  padding: 0px;
+  background: #FCFCFC;
+}
+
+/* Getting rid of the default link styles here */
+.navbar li a {
+  color: #080808;
+  text-decoration: none;
+}
+
+.totalpane{
+  height: 500px;
+  width: 80%;
+  background-color: powderblue;
+  float: center;
+  border-collapse: collapse;
+}
+
+.datapane{
+  height: 100%;
+  width: 100%;
+  font-size: 12px;
+  text-align: center;
+  background-color: powderblue;
+  float: left;
+  border-collapse: collapse;
+}
+.leftpane{
+  height: 500px;
+  padding: 20px;
+  width: 65%;
+  margin-right: 20px;
+  background-color: powderblue;
+  float: left;
+  border-collapse: collapse; 
+  
+}
+.rightpane{
+  height: 450px;
+  width: 30%;
+  background-color: powderblue;
+  position: relative;
+  margin-left: 68%; 
+      
+}
+
+.vitual_image{
+  width: 145px;
+  height: 145px;
+  padding: 3%;
+}
+
+.summary_image{
+  width: 200px;
+  height: 200px;
+  padding: 3%;
+  
+}
+
+.comp_image{
+  width: 250px;
+  height: 150px;
+    
+}
+
+.vitual_image1{
+  width: 145px;
+  height: 145px;
+  padding: 3%;
+  border: 3px solid orange;
+  padding: 0;
+}
+
+.table th{
+  padding: 0;
+}
+/* Adding media queries to show the drop-down, and hide the navbar when the screen
+ is smaller than 480 pixels */
+
+@media (max-width: 1023px) {
+  .navbar li {
+    padding: 10px;
+  }
+
+  .post {
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+  .navbar ul {
+    visibility: hidden;
+  }
+
+  #nav-select {
+    visibility: visible;
+  }
+
+  .rightpane{
+    
+    margin-top: 520px;
+    height: 250px;
+    width: 98%;
+    margin-left: 0;
+    
+  }
+  
+  .leftpane{
+    width: 98%;
+    height: 500px;
+  }
+  
+  .vitual_image{
+    width: 145px;
+    height: 145px;
+    
+  } 
+}
